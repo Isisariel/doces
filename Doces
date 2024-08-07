@@ -15,7 +15,7 @@ public class Doces extends JFrame implements ActionListener {
     private double[] precos = {3.50, 2.75, 1.00};
 
     public Doces() {
-        setTitle("Loja de doces da Rafa");
+        setTitle("Loja de doces da √çsis");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
@@ -36,21 +36,21 @@ public class Doces extends JFrame implements ActionListener {
                 docesPanel[i].add(docesLabel[i], BorderLayout.CENTER);
 
                 precoLabel[i] = new JLabel("R$" + precos[i]);
-                precoLabel[i].setHorizontalAlignment(JLabel.RIGHT); // Alinhamento ‡ direita
+                precoLabel[i].setHorizontalAlignment(JLabel.RIGHT); // Alinhamento √† direita
                 docesPanel[i].add(precoLabel[i], BorderLayout.LINE_END);
 
                 GridBagConstraints gbcCandy = new GridBagConstraints();
                 gbcCandy.gridx = 0;
                 gbcCandy.gridy = i + 1;
                 gbcCandy.fill = GridBagConstraints.HORIZONTAL;
-                gbcCandy.insets = new Insets(5, 5, 5, 5); // EspaÁamento
+                gbcCandy.insets = new Insets(5, 5, 5, 5); // Espa√ßamento
                 add(docesPanel[i], gbcCandy);
 
                 quantidadeCampos[i] = new JTextField(5);
                 GridBagConstraints gbcQuantidade= new GridBagConstraints();
                 gbcQuantidade.gridx = 1;
                 gbcQuantidade.gridy = i + 1;
-                gbcQuantidade.insets = new Insets(5, 5, 5, 5); // EspaÁamento
+                gbcQuantidade.insets = new Insets(5, 5, 5, 5); // Espa√ßamento
                 add(quantidadeCampos[i], gbcQuantidade);
 
             } catch (IOException e) {
@@ -65,7 +65,7 @@ public class Doces extends JFrame implements ActionListener {
         gbcButton.gridy = 4;
         gbcButton.gridwidth = 2;
         gbcButton.fill = GridBagConstraints.HORIZONTAL;
-        gbcButton.insets = new Insets(10, 0, 0, 0); // EspaÁamento
+        gbcButton.insets = new Insets(10, 0, 0, 0); // Espa√ßamento
         add(Button, gbcButton);
 
         pack();
